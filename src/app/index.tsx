@@ -29,14 +29,16 @@ function getDevMenuHint() {
 }
 
 export default function HomeScreen() {
+  console.log('Home rendered');
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
         <ThemedView style={styles.heroSection}>
           <AnimatedIcon />
           <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
+            My Task Tracker
           </ThemedText>
+          <ThemedText>0 tasks today</ThemedText>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>
